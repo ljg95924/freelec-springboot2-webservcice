@@ -1,5 +1,6 @@
 package com.springboot.domain.posts;
 
+import com.springboot.domain.BaseTimeEntity;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -14,7 +15,7 @@ import javax.persistence.*;
 @Getter
 @NoArgsConstructor
 @Entity
-public class Posts {
+public class Posts extends BaseTimeEntity {
     @Id // 해당 테이블의 PK 필드를 나타냄
     // @GeneratedValue: PK의 생성 규칙을 나타냄
     // 스프링부트 2.0에서는 GenerationType.IDENTITY 옵션을 추가해야만 auto_increment 가 됨
