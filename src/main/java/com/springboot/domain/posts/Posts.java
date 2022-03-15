@@ -20,7 +20,7 @@ public class Posts {
     // 스프링부트 2.0에서는 GenerationType.IDENTITY 옵션을 추가해야만 auto_increment 가 됨
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    
+
     // Column : 테이블의 칼럼을 나타내며 굳이 선언하지 않더라도 해당 클래스의 필드는 모두 칼럼이 됨
     // 기본값 외에 추가로 변경이 필요한 옵션이 있으면 사용
     @Column(length = 500, nullable = false)
@@ -38,5 +38,10 @@ public class Posts {
         this.title = title;
         this.content = content;
         this.author = author;
+    }
+
+    public void update(String title, String content) {
+        this.title = title;
+        this.content = content;
     }
 }
