@@ -11,7 +11,7 @@ import static org.hamcrest.Matchers.is;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
-// 테스트를 진행할 때 JUnit에 내장된 실행자 외에 다른 실행자를 실행시킴
+// @RunWith: 테스트를 진행할 때 JUnit에 내장된 실행자 외에 다른 실행자를 실행시킴
 // 여기서는 SpringRuner라는 스프링 실행자를 사용
 // 즉 스프링부트테스트와 JUnit 사이에 연결자 역할을 함
 @RunWith(SpringRunner.class)
