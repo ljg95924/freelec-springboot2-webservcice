@@ -10,7 +10,7 @@
     <br>
     <!-- 목록 출력 영역 -->
     <table class="table table-horizontal table-bordered">
-        <thead class="thread-strong">
+        <thead class="thead-strong">
         <tr>
             <th>게시글번호</th>
             <th>제목</th>
@@ -22,7 +22,7 @@
         {{#posts}}
             <tr>
                 <td>{{id}}</td>
-                <td>{{title}}</td>
+                <td><a href="/posts/update/{{id}}">{{title}}</a></td>
                 <td>{{author}}</td>
                 <td>{{modifiedDate}}</td>
             </tr>
@@ -30,5 +30,6 @@
         </tbody>
     </table>
 </div>
+
 
 {{>layout/footer}}
